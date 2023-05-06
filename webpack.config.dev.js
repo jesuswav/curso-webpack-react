@@ -11,6 +11,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    mode: 'development',
     module: {
         rules: [
             {
@@ -44,7 +45,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
-        new cleanWebpackPlugin(),
     ],
     devServer: {
         static: {
